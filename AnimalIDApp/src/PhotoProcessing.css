@@ -1,0 +1,154 @@
+.AnimalInfo-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #beedbe;
+    overflow-x: hidden ;
+}
+
+.AnimalInfo-container h1 {
+  font-family: "Inter"; 
+    font-size: 80px;
+}
+
+
+.Animal-Container {
+  font-family: "Inter"; 
+    display: flex;
+    flex-direction: column;    
+    max-width: 30rem ;
+    height: auto;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+.Animal-Container h3 {
+  font-family: "Inter"; 
+    font-size: 40px;
+}
+
+.Animal-Container p {
+  font-family: "Inter";   
+    font-size: 30px;
+}
+
+.capture {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.capture:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.capture:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.capture:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.img {
+  max-width: fit-content;
+  max-height: fit-content;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .AnimalInfo-container {
+    height: 100vh;  /* Allows container to grow with content */
+    padding: 20px 10px;  /* Reduces padding, adds vertical space */
+    background-size: cover;  /* Ensures background covers adjusted height */
+
+  }
+
+  .AnimalInfo-container h2 {
+    font-size: 1em;
+  }
+
+
+  .AnimalInfo-container h1 {
+    font-family: "New Amsterdam";
+  }
+  .AnimalInfo-container h1, .Animal-Container h3, .Animal-Container p {
+    font-size: 3rem;  /* Scales down font size */
+  }
+
+  .Animal-Container > p {
+    font-size: 15px;
+  }
+
+  .button-33, .capture, .home-button {
+    font-size: 16px;  /* Smaller font size */
+    padding: 8px 16px;  /* Smaller padding */
+    margin: 5px;  /* Reduces margin */
+  }
+
+  /* Reduce gaps and ensure buttons and inputs fit on screen */
+  div[style*="flex"] {
+    gap: 10px;  /* Smaller gaps */
+    flex-direction: column;  /* Stacks elements vertically */
+  }
+
+  /* Adjust media elements sizes */
+  video, img {
+    width: auto;  /* Full width to fit mobile screens */
+    height: auto;  /* Maintain aspect ratio */
+  }
+
+  .Animal-Image {
+    max-width: 90vw;
+    
+  }
+
+
+
+  .Animal-Container {
+    max-width: 90vw;
+  }
+
+  .Input-Box[type="file"] {
+    font-size: 15px;
+    padding: 1rem;
+  }
+
+
+}
+
+
+
