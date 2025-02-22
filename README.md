@@ -27,16 +27,21 @@ npm install
 #### 3. Set up the environment file:
 Create a `.env` file in the root directory of the project with the following variables:
 ```
-VITE_API_KEY=
-VITE_FIREBASE_AUTH_DOMAIN=
-VITE_FIREBASE_PROJECT_ID=
-VITE_FIREBASE_STORAGE_BUCKET=
-VITE_FIREBASE_MESSAGING_SENDER_ID=
-VITE_FIREBASE_APP_ID=1:666417253972:web:
-VITE_FIREBASE_MEASUREMENT_ID=G-
-VITE_TENOR_APIKEY=
-VITE_OPENAI_API_KEY=
-OPENAI_API_KEY=
+# OpenAI API Key
+VITE_OPENAI_API_KEY=your_openai_api_key
+OPENAI_API_KEY=your_openai_api_key
+
+# Firebase Configuration
+VITE_API_KEY=your_firebase_api_key
+VITE_FIREBASE_AUTH_DOMAIN=your_firebase_project_id.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=your_firebase_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_firebase_project_id.appspot.com
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_firebase_messaging_sender_id
+VITE_FIREBASE_APP_ID=your_firebase_app_id
+VITE_FIREBASE_MEASUREMENT_ID=your_firebase_measurement_id
+
+# Tenor API Key
+VITE_TENOR_APIKEY=your_tenor_api_key
 ```
 Fill in the values with your API keys and Firebase project configuration details.
   
